@@ -1,0 +1,5 @@
+#swaping of two numbers without the third variable
+a = int(input("enter the first number"))
+b = int(input("enter the second number"))
+a, b = b, a
+print(f"the swapped number is a={b} and b = {a}")
