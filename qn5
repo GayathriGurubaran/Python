@@ -1,0 +1,9 @@
+# Input the limit
+limit = int(input("Enter the limit: "))
+
+# Generate Fibonacci sequence
+a, b = 0, 1
+print("Fibonacci sequence:")
+while a <= limit:
+    print(a, end=" ")
+    a, b = b, a + b
