@@ -1,0 +1,9 @@
+#check the datatype of the given varibale 
+a = input()
+try:    
+#to evaluate the datatype
+   evaluate = eval(a)
+   print(f"The data type is : {type(evaluate)}")
+
+except:
+     print(f"the datatype is not found")
