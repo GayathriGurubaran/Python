@@ -1,0 +1,15 @@
+# Input a string from the user
+string = input("Enter a string: ")
+
+# Initialize a counter for vowels
+vowel_count = 0
+
+# Define vowels
+vowels = "aeiouAEIOU"
+
+# Loop through each character in the string
+for char in string:
+    if char in vowels:  # Check if the character is a vowel
+        vowel_count += 1
+
+print(f"The number of vowels in the string is: {vowel_count}")
