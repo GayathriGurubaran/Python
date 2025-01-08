@@ -1,0 +1,60 @@
+'''there are two types of type castoing in python they are implicit and explicit type casting 
+In implicit type casting, Python automatically converts one data type to another without any user intervention. This occurs when converting a smaller data type to a larger data type, ensuring no data loss.'''
+a = 5      # Integer
+b = 2.5    # Float
+result = a + b  # Python implicitly converts `a` (int) to `float`
+print(result)   # Output: 7.5
+print(type(result))  # Output: <class 'float'>
+
+'''In explicit type casting, the programmer explicitly converts one data type into another using Python's built-in functions. Some commonly used functions include:
+
+int() - Converts to integer.
+float() - Converts to float.
+str() - Converts to string.
+bool() - Converts to boolean.
+list() - Converts to list.
+tuple() - Converts to tuple.
+set() - Converts to set.
+dict() - Converts to dictionary.'''
+
+# Integer to Float
+num = 10
+float_num = float(num)
+print(float_num)  # Output: 10.0
+
+# Float to Integer
+decimal = 3.75
+int_num = int(decimal)
+print(int_num)  # Output: 3
+
+# Integer to String
+number = 25
+string_number = str(number)
+print(string_number)  # Output: '25'
+
+# String to Integer
+string_value = "123"
+int_value = int(string_value)
+print(int_value)  # Output: 123
+
+#String to List
+word = "Python"
+word_list = list(word)
+print(word_list)  # Output: ['P', 'y', 't', 'h', 'o', 'n']
+
+#List to String
+char_list = ['P', 'y', 't', 'h', 'o', 'n']
+word = ''.join(char_list)
+print(word)  # Output: 'Python'
+
+# Boolean to Integer
+flag = True
+print(int(flag))  # Output: 1
+
+#Dictionary to List
+data = {'a': 1, 'b': 2, 'c': 3}
+keys_list = list(data.keys())
+values_list = list(data.values())
+print(keys_list)  # Output: ['a', 'b', 'c']
+print(values_list)  # Output: [1, 2, 3]
+
