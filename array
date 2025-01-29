@@ -1,0 +1,31 @@
+#input to array , even numbers deletion , vowels count 
+
+arr = list(map(int, input("enter the numbers with space :").split()))
+print(arr)
+new_arr = []
+for num in arr:
+    if num % 2 !=0:                #Enter the numbers :10 21 51 47 [10, 21, 51, 47][21, 51, 47]
+        new_arr.append(num)
+
+print(new_arr)
+
+List comprehension
+
+arr = list(map(int,input("enter the numbers in array").split()))
+evenarr = [num for num in arr if num%2 !=0]      #enter the numbers in array10 20 53 63  [53, 63]
+print(evenarr)
+
+# the sum function can be used in list, tupes, and iterable only and not in normal addtion 
+
+s = "Hello World"
+print(sum(1 for char in s if char in "aeiouAEIOU"))  # Output: 3
+
+#Find the Largest and Smallest Elements in a List
+numbers = [5, 12, 34, 1, 99, 23]
+numbers.sort()
+print("Smallest:", numbers[0])   # Output: 1
+print("Largest:", numbers[-1])   # Output: 99
+
+#Traversing Arrays:
+
+#Traversing an array means visiting each element of the array, one by one, to perform an operation.
